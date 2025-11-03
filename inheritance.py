@@ -1,19 +1,24 @@
-class student :
-    def getdata(self,rollno,name,course):
-        self.rollno=rollno
-        self.name=name
-        self.course=course
-    def displaystudents(self):
-        print("Roll Number:",self.rollno)
-        print("Name:",self.name) 
-        print("Course:",self.course) 
-#inheritence
-class test(student):
-    def getmarks(self,Marks):
-        self.Marks=Marks
+class Student:
+    def getData(self, rollno, name, course):
+        self.rollno = rollno
+        self.name = name
+        self.course = course
+    def displayStudent(self):
+        print("Roll Number:", self.rollno)
+        print("Name:", self.name)
+        print("Course:", self.course)
+class Test(Student):
+    def getMarks(self, marks):
+        self.marks = marks
     def displayMarks(self):
-        print("Total Marks :",self.Marks)
-r=int(input("Enter The Roll Number :"))
-n=input("Enter The Name :")  
-c=input("Enter The Course :")
-m=int(input("Enter The Marks :"))                 
+        print("Total Marks:", self.marks)
+r = int(input("Enter the Roll Number: "))
+n = input("Enter the Name: ")
+c = input("Enter the Course: ")
+m = int(input("Enter the Marks: "))
+print("Result")
+stud1 = Test()
+stud1.getData(r, n, c)
+stud1.getMarks(m)
+stud1.displayStudent()
+stud1.displayMarks()

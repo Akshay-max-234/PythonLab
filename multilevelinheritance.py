@@ -30,7 +30,7 @@ class Result(Test):
 r = int(input("Enter Roll Number: "))
 n = input("Enter Name: ")
 c = input("Enter Course Name: ")
-m = int(input("Enter Total Marks (out of 600): "))
+m = int(input("Enter Marks:"))
 stud1 = Result()
 print("Result")
 stud1.getData(r, n, c)
@@ -38,3 +38,4 @@ stud1.getMarks(m)
 stud1.displayStudent()
 stud1.displayMarks()
 stud1.calculateGrade()
+

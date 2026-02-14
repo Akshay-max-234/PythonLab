@@ -1,4 +1,4 @@
-
-listcolor=("red","lavender","blue","tint","pink")
-print("first color:",color[0])
-print("last color:",color[-1])
+clr1={'red','maroon','blue','tint'}
+clr2={'tint','lavender','aquamarine','blue'}
+clr3=clr1.difference(clr2)
+print(clr3)
